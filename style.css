@@ -31,16 +31,53 @@ a {
   display: none;
 }
 @media screen and (max-width: 425px) {
-  #hamburger {
-    display: block;
-  }
-
   #menu {
-    display: none;
+    background-color: antiquewhite;
+    display: block;
+    height: 0px;
+    overflow-y: hidden;
+    position: absolute;
+    right: 0px;
+    top: 40px;
+    transition: .6s;
+    visibility: hidden;
+    width: 100%;
+    z-index: 1000;
   }
 
   #menu.exist {
+    height: 30vh;
+    overflow-y: auto;
+    visibility: visible;
+  }
+
+  #menu a {
+    padding: 1rem 0;
+    margin: 0 1rem;
+    border-bottom: 2px solid rgba(0, 0, 0, .05);
+  }
+
+  #hamburger {
     display: flex;
+    padding: .5rem 1rem;
+    font-size: 1rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+    gap: .5rem;
+  }
+
+  #hamburger-ico {
+    border-top: 2px solid;
+    width: 20px;
+  }
+  #hamburger-ico::after , #hamburger-ico::before {
+    content: '';
+    display: block;
+    border-top: 2px solid;
+    height: 2px;
+    width: 20px;
+    margin-top: 5px;
   }
 }
 
