@@ -23,6 +23,18 @@ describe('Testes de responsividade e funcionalidade do portifolio', () => {
 		cy.get('#hamburger')
 			.should('exist')
 	});
+
+  it('Inicialmente a navegação não é visivel', () => {
+    cy.get('#menu')
+        .should('be.hidden')
+  })
+
+  it('Ao clicar no botão hamburger, o menu de navegação aparece', () => {
+    cy.get('#hamburger')
+        .click()
+    cy.get('#menu')
+        .should('be.visible')
+  });
   });
 
   context('Testes de responsividade e funcionalidade tablet', () => {

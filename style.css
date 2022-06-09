@@ -1,7 +1,7 @@
 * {
+  list-style: none;
   margin: 0px;
   padding: 0px;
-  list-style: none;
 }
 
 a {
@@ -13,8 +13,8 @@ a {
   box-sizing: border-box;
   display: flex;
   height: 40px;
-  padding: 1rem;
   justify-content: space-between;
+  padding: 1rem;
 }
 
 #menu {
@@ -52,19 +52,19 @@ a {
   }
 
   #menu a {
+    border-bottom: 2px solid rgba(0, 0, 0, .05);
     padding: 1rem 0;
     margin: 0 1rem;
-    border-bottom: 2px solid rgba(0, 0, 0, .05);
   }
 
   #hamburger {
-    display: flex;
-    padding: .5rem 1rem;
-    font-size: 1rem;
-    border: none;
     background: none;
+    border: none;
     cursor: pointer;
+    display: flex;
+    font-size: 1rem;
     gap: .5rem;
+    padding: .5rem 1rem;
   }
 
   #hamburger-ico {
@@ -72,12 +72,12 @@ a {
     width: 20px;
   }
   #hamburger-ico::after , #hamburger-ico::before {
+    border-top: 2px solid;
     content: '';
     display: block;
-    border-top: 2px solid;
     height: 2px;
-    width: 20px;
     margin-top: 5px;
+    width: 20px;
   }
 }
 
