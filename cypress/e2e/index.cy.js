@@ -7,9 +7,22 @@ describe('Testes de responsividade e funcionalidade do portifolio', () => {
       cy.viewport(sizes[0]);
     });
 
-    it('pass', () => {
+    it('Existe um componente header', () => {
+      cy.get('header')
+            .should('exist')
+    });
+    
+    it('Está escrito portifólio no header', () => {
+    	cy.get('#title-header')
+        	.should('exist')
+		cy.get('#title-header')
+			.should('have.text', 'Portifólio')
+    });
 
-    })
+	it('O botão do menu hamburger está presente', () => {
+		cy.get('#hamburger')
+			.should('exist')
+	});
   });
 
   context('Testes de responsividade e funcionalidade tablet', () => {
