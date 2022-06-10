@@ -38,18 +38,18 @@ describe('Testes de responsividade e funcionalidade do portifolio', () => {
   });
 
   it('Na sessão "hero" o elemento image possui o src correto', () => {
-    cy.get('#hero-image')
+    cy.get('img#hero-img')
         .should('have.attr', 'src', './images/heroImage.png');
   });
 
-  it('O "title" da sessão hero é "Breno Laskavski Lopes"', () => {
-    cy.get('#hero-title')
-        .should('have.text', 'Breno Laskavski Lopes');
+  it('O "title" da sessão hero é "É um preser te conhecer!"', () => {
+    cy.get('h1#hero-title')
+        .should('have.text', 'É um preser te conhecer!');
   });
 
-  it('O "about me" possui no minimo 100 caracteres', () => {
-    cy.get('#hero-describe')
-        .should('have.length', 100);
+  it('O "about me" possui algo escrito', () => {
+    cy.get('p#hero-describe')
+        .should('not.be.empty');
   });
   });
 
