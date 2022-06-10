@@ -53,19 +53,19 @@ describe('Testes de responsividade e funcionalidade do portifolio', () => {
     });
 
     it('O titulo da sessão de desenvolvimento é "Desenvolvimento"', () => {
-      cy.get('h1#development')
+      cy.get('h1#development-title')
           .should('have.text', 'Desenvolvimento')
     });
 
     it('O descritivo da sessão de desenvolvimento não estar vazio', () => {
-      cy.get('h1#development')
-          .shoudl('not.be.empty')
+      cy.get('h1#development-describe')
+          .should('not.be.empty')
     });
 
     it('As imagens da área de desenvolvimento estão presentes', () => {
       cy.get('div#image-container')
           .find('img')
-            .should('have.length', 6)
+            .should('have.length', 7)
     });
   });
 

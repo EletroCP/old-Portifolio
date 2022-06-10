@@ -10,6 +10,7 @@ a {
 }
 
 #header {
+  position: sticky;
   align-items: center;
   box-sizing: border-box;
   display: flex;
@@ -32,6 +33,10 @@ a {
   display: none;
 }
 @media screen and (max-width: 425px) {
+  header #header{
+    position: sticky;
+    top: 0;
+  }
   #menu {
     background-color: antiquewhite;
     display: block;
