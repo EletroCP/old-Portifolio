@@ -20,37 +20,53 @@ describe('Testes de responsividade e funcionalidade do portifolio', () => {
 			  .should('have.text', 'Portifólio');
     });
 
-	it('O botão do menu hamburger está presente', () => {
-		cy.get('#hamburger')
-			  .should('exist');
-	});
+    it('O botão do menu hamburger está presente', () => {
+      cy.get('#hamburger')
+          .should('exist');
+    });
 
-  it('Inicialmente a navegação não é visivel', () => {
-    cy.get('#menu')
-        .should('be.hidden');
-  })
+    it('Inicialmente a navegação não é visivel', () => {
+      cy.get('#menu')
+          .should('be.hidden');
+    })
 
-  it('Ao clicar no botão hamburger, o menu de navegação aparece', () => {
-    cy.get('#hamburger')
-        .click()
-    cy.get('#menu')
-        .should('be.visible');
-  });
+    it('Ao clicar no botão hamburger, o menu de navegação aparece', () => {
+      cy.get('#hamburger')
+          .click()
+      cy.get('#menu')
+          .should('be.visible');
+    });
 
-  it('Na sessão "hero" o elemento image possui o src correto', () => {
-    cy.get('img#hero-img')
-        .should('have.attr', 'src', './images/heroImage.png');
-  });
+    it('Na sessão "hero" o elemento image possui o src correto', () => {
+      cy.get('img#hero-img')
+          .should('have.attr', 'src', './images/heroImage.png');
+    });
 
-  it('O "title" da sessão hero é "É um preser te conhecer!"', () => {
-    cy.get('h1#hero-title')
-        .should('have.text', 'É um preser te conhecer!');
-  });
+    it('O "title" da sessão hero é "É um preser te conhecer!"', () => {
+      cy.get('h1#hero-title')
+          .should('have.text', 'É um preser te conhecer!');
+    });
 
-  it('O "about me" possui algo escrito', () => {
-    cy.get('p#hero-describe')
-        .should('not.be.empty');
-  });
+    it('O "about me" possui algo escrito', () => {
+      cy.get('p#hero-describe')
+          .should('not.be.empty');
+    });
+
+    it('O titulo da sessão de desenvolvimento é "Desenvolvimento"', () => {
+      cy.get('h1#development')
+          .should('have.text', 'Desenvolvimento')
+    });
+
+    it('O descritivo da sessão de desenvolvimento não estar vazio', () => {
+      cy.get('h1#development')
+          .shoudl('not.be.empty')
+    });
+
+    it('As imagens da área de desenvolvimento estão presentes', () => {
+      cy.get('div#image-container')
+          .find('img')
+            .should('have.length', 6)
+    });
   });
 
   context('Testes de responsividade e funcionalidade tablet', () => {

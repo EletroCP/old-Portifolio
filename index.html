@@ -5,6 +5,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300&display=swap" rel="stylesheet">
   <title>Portifólio</title>
 </head>
 <body>
@@ -32,9 +35,14 @@
     </nav>
   </header>
   <section id="mainHero">
-    <img src="./images/heroImage.png" alt="Minha foto" id="hero-img">
-    <h1 id="hero-title">É um preser te conhecer!</h1>
-    <p id="hero-describe">Meu nome é Breno Laskavski Lopes, atualmente vivo em Guaratuba - PR, Atualmente sou estudante de desenvolvimento web full stack pela Trybe. No meu tempo livre gosto de ler, passar um tempo com minha familia e namorada e também jogar. Aqui você pode descobrir um pouco sobre meu processo de desenvolvimento enquanto dev e ver alguns dos meus trabalhos. Sinta-se a vontade.</p>
+    <div id="imageContainer">
+      <img src="./images/heroImage.png" alt="Minha foto" id="hero-img">
+    </div>
+    <div id="textContainer">
+      <h1 id="hero-title">É um preser te conhecer!</h1>
+      <p id="hero-describe">Meu nome é Breno Laskavski Lopes, moro vivo em Guaratuba - PR, sou estudante de desenvolvimento web full stack pela Trybe.
+      <br> No meu tempo livre gosto de ler, passar um tempo com minha familia e namorada, ver series ou filmes e também jogar. <br> Aqui você pode descobrir um pouco sobre meu processo de desenvolvimento enquanto dev e ver alguns dos meus trabalhos. Sinta-se a vontade.</p>
+    </div>
   </section>
 </body>
 <script src="./script.js"></script>
