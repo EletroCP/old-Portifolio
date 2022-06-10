@@ -46,7 +46,7 @@ a {
   }
 
   #menu.exist {
-    height: 30vh;
+    height: 100vh;
     overflow-y: auto;
     visibility: visible;
   }
