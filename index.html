@@ -35,32 +35,40 @@
     </nav>
   </header>
   <section id="mainHero">
-    <div id="imageContainer">
+    <div class="imageContainer">
       <img src="./images/heroImage.png" alt="Minha foto" id="hero-img">
     </div>
-    <div id="textContainer">
-      <h1 id="hero-title">É um preser te conhecer!</h1>
-      <p id="hero-describe">Meu nome é Breno Laskavski Lopes, moro vivo em Guaratuba - PR, sou estudante de desenvolvimento web full stack pela Trybe.
+    <div class="textContainer">
+      <h1 id="hero-title">É um prazer te conhecer!</h1>
+      <p id="hero-describe">Meu nome é Breno Laskavski Lopes, vivo em Guaratuba - PR, sou estudante de desenvolvimento web full stack pela Trybe.
       <br> No meu tempo livre gosto de ler, passar um tempo com minha familia e namorada, ver series ou filmes e também jogar. <br> Aqui você pode descobrir um pouco sobre meu processo de desenvolvimento enquanto dev e ver alguns dos meus trabalhos. Sinta-se a vontade.</p>
     </div>
   </section>
-  <section id="development">
-    <h1 id="development-title">Desenvolvimento<h1>
-      <p id="development-describe">A maneira que desenvolvo mues projetos é a seguente: Primeiro faço uma estrutura basica no figma onde posso me baser ao longo do desenvolvimeto e ter uma ideia do que posso gostar ou não antes de produzir.
-      <br>
-      Depois passo para a parte de testes, esse momento é fundamental para o bom funcionamento de todas as partes, caso alguma das modificações faça com que outra parte pare de funcionar os testes me avisam disso.
-      <br>
-      Por final começo a fazer a pagina em si, crio a estrutura em html, depois faço a logica em javascript e então estilizo tudo com css, antes de continuar para próxima parte do site, verifico se nenhum teste "quebrou".
+  <section  id="development">
+    <div  class="textContainer">
+      <h1 id="development-title" >Desenvolvimento</h1>
+      <p>Meu método de desenvolvimento é dividido em 4 etapas a de estruturação, testes, implementação e refatoração. <br>
+        Primeiro, crio a estrutura base do projeto para ajudar o na etapa de testes e implementação, para isso uso ferramentos como o Figma que posibilitam uma prévia do modelo do site.
       </p>
-      <div id="image-container">
-        <img src="./images/desenvolvimento/figma1.png" alt="1° imagem do figma">
-        <img src="./images/desenvolvimento/figma2.png" alt="2° imagem do figma">
-        <img src="./images/desenvolvimento/figma3.png" alt="3° imagem do figma">
-        <img src="./images/desenvolvimento/cypress1.png" alt="Desenvolvimento do cypress">
-        <img src="./images/desenvolvimento/html1.png" alt="Desenvolvimento do html">
-        <img src="./images/desenvolvimento/js1.png" alt="Desenvolvimento do javascript">
-        <img src="./images/desenvolvimento/css1.png" alt="Desenvolvimento do css">
-      </div>
+      <p>
+        Em seguida passo para os testes, eles servem para verificar se os elementos estão todos funcionando como deveriam.
+      </p>
+      <p>
+        Hora de por a mão na massa, começo implementando o HTML, ele é responsavel pela estrutura basica do site como textos, imagens, links e "containeres" que ajudam na hora de estilizar o site, Essa parte é feita com CSS, Cores e efeitos, e tambem na responsividade para que a pagina funcione nos mais diversos dispositivos. E então o Javascript, a parte lógica, em que permite a manipulação dos elementos de forma facil e dinâmica.
+      </p>
+      <p>
+        E por ultimo e provavelmente mais importante a refatoração, após adicionar os elementos mover eles para cima e para baixo e adicionar lógica, existe a possibilidade de uma imagem estar sobrepondo um botão, ou ter faltado de por um link em algum lugar. É o momento de rodar os testes novamente para certificar o funcionamento, verificar se não há nada fora do lugar para então finalizar mais um tabalho.
+      </p>
+    </div>
+    <div class="imageContainer" id="carousel">
+      <img src="./images/desenvolvimento/figma1.png" alt="Imagem do figma mostrando a estrutura para celular" class="development-image">
+      <img src="./images/desenvolvimento/figma2.png" alt="Imagem do figma mostrando a estrutura para tablet" class="development-image">
+      <img src="./images/desenvolvimento/figma3.png" alt="Imagem do figma mostrando a estrutura para desktop" class="development-image">
+      <img src="./images/desenvolvimento/html1.png" alt="Imagem do HTML dessa pagina" class="development-image">
+      <img src="./images/desenvolvimento/css1.png" alt="Imagem do CSS dessa pagina" class="development-image">
+      <img src="./images/desenvolvimento/js1.png" alt="Imagem do CSS dessa pagina" class="development-image">
+      <img src="./images/desenvolvimento/cypress1.png" alt="Imagem dos testes da pagina" class="development-image">
+    </div>
   </section>
 </body>
 <script src="./script.js"></script>

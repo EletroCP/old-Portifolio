@@ -44,7 +44,7 @@ describe('Testes de responsividade e funcionalidade do portifolio', () => {
 
     it('O "title" da sessão hero é "É um preser te conhecer!"', () => {
       cy.get('h1#hero-title')
-          .should('have.text', 'É um preser te conhecer!');
+          .should('have.text', 'É um prazer te conhecer!');
     });
 
     it('O "about me" possui algo escrito', () => {
@@ -63,7 +63,7 @@ describe('Testes de responsividade e funcionalidade do portifolio', () => {
     });
 
     it('As imagens da área de desenvolvimento estão presentes', () => {
-      cy.get('div#image-container')
+      cy.get('div#carousel')
           .find('img')
             .should('have.length', 7)
     });
