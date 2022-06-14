@@ -1,16 +1,17 @@
 {
   "devDependencies": {
-    "cypress": "^10.0.3"
+    "cypress": "^10.0.3",
+    "typescript": "^4.7.3"
   },
-    "scripts": {
-      "cypress:open": "cypress open"
-    },
-  
+  "scripts": {
+    "cy:open": "cypress open"
+  },
   "name": "portifolio",
   "description": "Meus principais projetos e um pouco sobre mim.",
   "version": "1.0.0",
   "main": "script.js",
   "dependencies": {
+    "@types/node": "^17.0.41",
     "aggregate-error": "^3.1.0",
     "ansi-colors": "^4.1.3",
     "ansi-escapes": "^4.3.2",
