@@ -28,7 +28,7 @@ h1 {
   align-items: center;
   box-sizing: border-box;
   display: flex;
-  height: 60px;
+  height: 70px;
   justify-content: space-between;
 }
 
@@ -49,7 +49,11 @@ h1 {
   #header {
     padding-right: .5rem;
     background-color: rgba(18, 18, 18, 0.87);
-    box-shadow: #616150 0 5.5px 1px;
+    box-shadow: #616150 0 8.5px 1px;
+  }
+
+  .line {
+    border: 1px solid rgb(14, 14, 14);
   }
 
   #logo{
@@ -65,7 +69,7 @@ h1 {
     overflow-y: hidden;
     position: absolute;
     right: 0px;
-    top: 60px;
+    top: 75px;
     transition: .6s;
     visibility: hidden;
     width: 100%;
@@ -113,21 +117,23 @@ h1 {
   #hero-img {
     max-width: 80%;
     height: auto;
+    padding-top: 3vh;
   }
 
   .textContainer {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    padding: 1.5vh;
   }
 
   .textContainer p {
-    padding: .4rem .5rem;
+    padding: .3rem .5rem;
     text-indent: 1rem;
     text-align: center;
   }
 
-   #carousel {
+   .carousel {
     overflow-x: auto;
     scroll-snap-type: x mandatory;
   }
@@ -141,7 +147,7 @@ h1 {
     scroll-behavior: smooth;
   }
 
-  #carousel {
+  .carousel {
     display: flex;
     justify-content: start;
     padding: 5px 0;
