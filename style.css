@@ -109,7 +109,7 @@ a {
   }
   .development-image {
     max-width: 100%;
-    height: auto;
+    height: 100%;
     object-fit: cover;
     flex: none;
     scroll-snap-align: start;
@@ -119,6 +119,7 @@ a {
 
   #carousel {
     display: flex;
+    justify-content: start;
   }
 }
 

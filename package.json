@@ -61,6 +61,7 @@
     "end-of-stream": "^1.4.4",
     "enquirer": "^2.3.6",
     "escape-string-regexp": "^1.0.5",
+    "eslint": "^8.17.0",
     "eventemitter2": "^6.4.5",
     "execa": "^4.1.0",
     "executable": "^4.1.1",
