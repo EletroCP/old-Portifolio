@@ -67,6 +67,23 @@ describe('Testes de responsividade e funcionalidade do portifolio', () => {
           .find('img')
             .should('have.length', 7)
     });
+
+    it('O titulo da sessão de projeto é "Projetos".', () => {
+      cy.get('h1#project-title')
+          .should('have.text', 'Projetos')
+    });
+
+    it('O texto explicativo não está vazio', () => {
+      cy.get('#describe-project')
+          .should('exist')
+           .and('not.be.empty')
+    });
+
+    it('O container de projetos não está vazio', () => {
+        cy.get('#container-projects')
+            .should('exist')
+              .and('not.be.empty')
+    });
   });
 
   context('Testes de responsividade e funcionalidade tablet', () => {
