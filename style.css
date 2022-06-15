@@ -1,3 +1,10 @@
+:root {
+  --main-color: rgb(255, 189, 89);
+  --secudary-color: rgb(234, 187, 109);
+  --first-dark: rgb(170, 143, 112);
+  --second-dark: rgb(92, 85, 67);
+}
+
 * {
   list-style: none;
   margin: 0px;
@@ -5,8 +12,16 @@
   font-family: 'Oxygen', sans-serif;
 }
 
+body {
+  background-color: whitesmoke;
+}
+
 a {
   text-decoration: none;
+}
+
+h1 {
+  color: var(--second-dark);
 }
 
 #header {
@@ -29,13 +44,14 @@ a {
 #hamburger {
   display: none;
 }
+
 @media screen and (max-width: 425px) {
   #header {
     padding-right: .5rem;
   }
 
   #menu {
-    background-color: antiquewhite;
+    background-color: var(--first-dark);
     display: block;
     height: 0px;
     overflow-y: hidden;
@@ -120,6 +136,7 @@ a {
   #carousel {
     display: flex;
     justify-content: start;
+    padding: 5px 0;
   }
 }
 
