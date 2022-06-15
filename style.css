@@ -28,7 +28,7 @@ h1 {
   align-items: center;
   box-sizing: border-box;
   display: flex;
-  height: 40px;
+  height: 60px;
   justify-content: space-between;
 }
 
@@ -48,6 +48,14 @@ h1 {
 @media screen and (max-width: 425px) {
   #header {
     padding-right: .5rem;
+    background-color: rgba(18, 18, 18, 0.87);
+    box-shadow: #616150 0 5.5px 1px;
+  }
+
+  #logo{
+    padding-left: .5rem;
+    width: 30%;
+    height: auto;
   }
 
   #menu {
@@ -57,7 +65,7 @@ h1 {
     overflow-y: hidden;
     position: absolute;
     right: 0px;
-    top: 40px;
+    top: 60px;
     transition: .6s;
     visibility: hidden;
     width: 100%;
@@ -85,11 +93,11 @@ h1 {
   }
 
   #hamburger-ico {
-    border-top: 2px solid;
+    border-top: 2px solid #616150;
     width: 20px;
   }
   #hamburger-ico::after , #hamburger-ico::before {
-    border-top: 2px solid;
+    border-top: 2px solid #616150;
     content: '';
     display: block;
     height: 2px;

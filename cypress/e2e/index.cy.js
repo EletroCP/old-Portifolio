@@ -13,11 +13,11 @@ describe('Testes de responsividade e funcionalidade do portifolio', () => {
             .should('exist');
     });
     
-    it('Está escrito portifólio no header', () => {
+    it('O componente header possui um logo', () => {
     	cy.get('#title-header')
         	.should('exist')
 		cy.get('#title-header')
-			  .should('have.text', 'Portifólio');
+			  .should('have.attr', 'src', './images/eletroCP.png');
     });
 
     it('O botão do menu hamburger está presente', () => {
