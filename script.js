@@ -8,7 +8,7 @@ const carrousel = document.querySelector('#carousel')
         event.target.scrollBy(-300,0)
     })
 
-function openMenu() {
+const openMenu = () => {
     const menuHamburger = document.getElementById('menu');
     menuHamburger.classList.toggle('exist')
 }
