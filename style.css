@@ -232,6 +232,10 @@ h1 {
     filter: invert(100%);
   }
 
+  #rights {
+    color: var(--main-color);
+  }
+
 }
 
 @media screen and (min-width: 720px){
