@@ -2,7 +2,7 @@
   --main-color: rgb(255, 189, 89);
   --secudary-color: rgb(234, 187, 109);
   --first-dark: rgb(170, 143, 112);
-  --second-dark: rgb(92, 85, 67);
+  --second-dark: rgb(97, 97, 80);
 }
 
 * {
@@ -14,10 +14,12 @@
 
 body {
   background-color: whitesmoke;
+  overflow: auto;
 }
 
 a {
   text-decoration: none;
+  color: var(--main-color);
 }
 
 h1 {
@@ -49,7 +51,7 @@ h1 {
   #header {
     padding-right: .5rem;
     background-color: rgba(18, 18, 18, 0.87);
-    box-shadow: #616150 0 8.5px 1px;
+    box-shadow: var(--second-dark) 0 8.5px 1px;
   }
 
   .line {
@@ -64,10 +66,10 @@ h1 {
   }
 
   #menu {
-    background-color: var(--first-dark);
+    background-color: var(--second-dark);
     display: block;
     height: 0px;
-    overflow-y: hidden;
+    overflow: auto;
     position: absolute;
     right: 0px;
     top: 75px;
@@ -98,11 +100,11 @@ h1 {
   }
 
   #hamburger-ico {
-    border-top: 2px solid #616150;
+    border-top: 2px solid var(--second-dark);
     width: 20px;
   }
   #hamburger-ico::after , #hamburger-ico::before {
-    border-top: 2px solid #616150;
+    border-top: 2px solid var(--second-dark);
     content: '';
     display: block;
     height: 2px;
@@ -179,6 +181,7 @@ h1 {
   }
 
   #tec-container {
+    padding: .5rem 0;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -195,6 +198,38 @@ h1 {
     background-color: var(--main-color);
     width: 75px;
     height: 25px;
+  }
+
+  #projects {
+    padding: .5rem;
+  }
+
+  #footer {
+    background-color: rgba(18, 18, 18, 0.87);
+    display: flex;
+    width: 100%;
+    height: 60px;
+    justify-content: space-between;
+    align-items: center;
+    bottom: 0;
+  }
+  
+  .footer-icons {
+    width: 100%;
+    height: auto;
+  }
+
+  #git {
+    width: 34px;
+    height: 34px;
+    filter: invert(100%);
+    padding-right: 10px;
+  }
+
+  #linkedin {
+    width: 68px;
+    height: 68px;
+    filter: invert(100%);
   }
 
 }
