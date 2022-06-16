@@ -175,8 +175,27 @@ h1 {
 
   #left-arrow {
     transform: rotate(180deg);
+
   }
 
+  #tec-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 3px;
+    height: auto;
+  }
+  
+  .box {
+    box-shadow: var(--first-dark) 1px 1px 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--main-color);
+    width: 75px;
+    height: 25px;
+  }
 
 }
 
