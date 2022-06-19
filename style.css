@@ -47,70 +47,143 @@ h1 {
   display: none;
 }
 
+#header {
+  padding-right: .5rem;
+  background-color: rgba(18, 18, 18, 0.87);
+  box-shadow: var(--second-dark) 0 8.5px 1px;
+}
+
+.line {
+  border: 1px solid rgb(14, 14, 14);
+  background-color: rgb(14, 14, 14);
+}
+
+#logo{
+  padding-left: .5rem;
+  width: 30%;
+  height: auto;
+}
+
+#menu {
+  background-color: var(--second-dark);
+  display: block;
+  height: 0px;
+  overflow: auto;
+  position: absolute;
+  right: 0px;
+  top: 75px;
+  transition: .6s;
+  visibility: hidden;
+  width: 100%;
+  z-index: 1000;
+}
+
+#menu a {
+  border-bottom: 2px solid rgba(0, 0, 0, .05);
+  padding: 1rem 0;
+  margin: 0 1rem;
+}
+
+#hamburger {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  font-size: 1rem;
+}
+
+#hamburger-ico {
+  border-top: 2px solid var(--second-dark);
+  width: 20px;
+}
+#hamburger-ico::after , #hamburger-ico::before {
+  border-top: 2px solid var(--second-dark);
+  content: '';
+  display: block;
+  height: 2px;
+  margin-top: 5px;
+  width: 20px;
+}
+
+ .carousel {
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+}
+
+.development-image {
+  max-width: 100%;
+  height: 100%;
+  object-fit: cover;
+  flex: none;
+  scroll-snap-align: start;
+  pointer-events: none;
+  scroll-behavior: smooth;
+}
+
+.block-caroseul {
+  max-width: 100%;
+  height: 100%;
+  flex: none;
+  overflow-y:initial;
+}
+
+#arrow-case{
+  display: flex;
+  justify-content: space-around;
+  padding: .3rem 0;
+}
+
+.arrow{
+  width: 5.5vh;
+  height: 100%;
+  border-radius: 50%;
+}
+
+#left-arrow {
+  transform: rotate(180deg);
+
+}
+
+#projects {
+  padding: .5rem;
+}
+
+#footer {
+  background-color: rgba(18, 18, 18, 0.87);
+  display: flex;
+  width: 100%;
+  height: 60px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#git {
+  width: 100%;
+  height: auto;
+  filter: invert(100%);
+}
+
+#linkedin {
+  width: 80%;
+  height: auto;
+  filter: invert(100%);
+}
+
+#rights {
+  color: var(--main-color);
+}
+
+#git-container {
+  padding-right: 5px;
+}
+
 @media screen and (max-width: 425px) {
-  #header {
-    padding-right: .5rem;
-    background-color: rgba(18, 18, 18, 0.87);
-    box-shadow: var(--second-dark) 0 8.5px 1px;
-  }
 
-  .line {
-    border: 1px solid rgb(14, 14, 14);
-    background-color: rgb(14, 14, 14);
-  }
-
-  #logo{
-    padding-left: .5rem;
-    width: 30%;
-    height: auto;
-  }
-
-  #menu {
-    background-color: var(--second-dark);
-    display: block;
-    height: 0px;
-    overflow: auto;
-    position: absolute;
-    right: 0px;
-    top: 75px;
-    transition: .6s;
-    visibility: hidden;
-    width: 100%;
-    z-index: 1000;
-  }
-
-  #menu.exist {
-    height: 100vh;
-    overflow-y: auto;
-    visibility: visible;
-  }
-
-  #menu a {
-    border-bottom: 2px solid rgba(0, 0, 0, .05);
-    padding: 1rem 0;
-    margin: 0 1rem;
-  }
-
-  #hamburger {
-    background: none;
-    border: none;
-    cursor: pointer;
-    display: flex;
-    font-size: 1rem;
-  }
-
-  #hamburger-ico {
-    border-top: 2px solid var(--second-dark);
-    width: 20px;
-  }
-  #hamburger-ico::after , #hamburger-ico::before {
-    border-top: 2px solid var(--second-dark);
-    content: '';
-    display: block;
-    height: 2px;
-    margin-top: 5px;
-    width: 20px;
-  }
+#menu.exist {
+  height: 40vh;
+  overflow-y: auto;
+  visibility: visible;
+}
 
   .imageContainer {
     display: flex;
@@ -129,55 +202,11 @@ h1 {
     flex-wrap: wrap;
     padding: 1.5vh;
   }
-
+  
   .textContainer p {
     padding: .3rem .5rem;
     text-indent: 1rem;
     text-align: center;
-  }
-
-   .carousel {
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-  }
-  .development-image {
-    max-width: 100%;
-    height: 100%;
-    object-fit: cover;
-    flex: none;
-    scroll-snap-align: start;
-    pointer-events: none;
-    scroll-behavior: smooth;
-  }
-
-  .carousel {
-    display: flex;
-    justify-content: start;
-    padding: 5px 0;
-  }
-
-  .block-caroseul {
-    max-width: 100%;
-    height: 100%;
-    flex: none;
-    overflow-y:initial;
-  }
-
-  #arrow-case{
-    display: flex;
-    justify-content: space-around;
-    padding: .3rem 0;
-  }
-
-  .arrow{
-    width: 5.5vh;
-    height: 100%;
-    border-radius: 50%;
-  }
-
-  #left-arrow {
-    transform: rotate(180deg);
-
   }
 
   #tec-container {
@@ -189,7 +218,7 @@ h1 {
     gap: 3px;
     height: auto;
   }
-  
+
   .box {
     box-shadow: var(--first-dark) 1px 1px 1px;
     display: flex;
@@ -200,42 +229,113 @@ h1 {
     height: 25px;
   }
 
-  #projects {
-    padding: .5rem;
-  }
 
-  #footer {
-    background-color: rgba(18, 18, 18, 0.87);
+  .carousel {
     display: flex;
-    width: 100%;
-    height: 60px;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  #git {
-    width: 100%;
-    height: auto;
-    filter: invert(100%);
-  }
-
-  #linkedin {
-    width: 80%;
-    height: auto;
-    filter: invert(100%);
-  }
-
-  #rights {
-    color: var(--main-color);
+    justify-content: start;
+    padding: 5px 0;
   }
 
 }
 
 @media screen and (min-width: 720px){
 
+section {
+  padding: 1.5rem 0;
+}
+
+#menu.exist {
+  height: 30vh;
+  overflow-y: auto;
+  visibility: visible;
+}
+
+  .imageContainer {
+    display: flex;
+  }
+
+  #hero-img {
+    max-width: 100%;
+    height: auto;
+    padding-top: 3vh;
+    padding-left: 1vh;
+  }
+
+  #mainHero {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .textContainer {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  
+  .textContainer p {
+    width: 100%;
+    padding-top: 1rem;
+  }
+
+  #hero-title {
+    width: 100%;
+    height: auto;
+    padding-top: 5rem;
+  }
+
+  #hero-describe {
+    padding: 0 1.5rem;
+    text-align: justify;
+  }
+
+  #technologies {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-top: 1rem;
+    width: 100%;
+  }
+
+  #tec-container {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    height: auto;
+    padding: 1rem 0;
+  }
+
+  .box {
+    align-items: center;
+    background-color: var(--main-color);
+    box-shadow: var(--first-dark) 1px 1px 1px;
+    display: flex;
+    height: 25px;
+    justify-content: center;
+    width: 20%;
+  }
+
+
+  .carousel {
+    display: flex;
+    justify-content: start;
+    height: 100%;
+    padding-top: 1rem;
+  }
+
+  #projects {
+    padding-bottom: 1.5rem;
+  }
+
 }
 
 @media screen and (min-width: 1280px) {
 
 }
-
