@@ -8,3 +8,5 @@ Layout voltado a acessibilidade garantindo uma boa experiencia a diversos usuari
 
 # Tecnologias
 As principais ferramentas utilizadas serão HTML, CSS e JS, para a composição da página e Cypress para os testes e para estruturação planejamneto o Figma.
+
+#### Acesse aqui: https://eletrocp.github.io/Portifolio/
