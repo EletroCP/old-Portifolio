@@ -1,11 +1,10 @@
 describe('Testes de responsividade e funcionalidade do portifolio', () => {
   const sizes = ['samsung-s10', 'ipad-2', 'macbook-13'];
-  const heroImage = '';
-
+  
   context('Testes de responsividade e funcionalidade mobile', () => {
     beforeEach(() => {
       cy.visit('./index.html')
-      cy.viewport(sizes[0]);
+      cy.viewport('samsung-s10');
     });
 
     it('Existe um componente header', () => {
@@ -14,9 +13,9 @@ describe('Testes de responsividade e funcionalidade do portifolio', () => {
     });
     
     it('O componente header possui um logo', () => {
-    	cy.get('#title-header')
+    	cy.get('#logo')
         	.should('exist')
-		cy.get('#title-header')
+		cy.get('#logo')
 			  .should('have.attr', 'src', './images/eletroCP.png');
     });
 
@@ -63,7 +62,7 @@ describe('Testes de responsividade e funcionalidade do portifolio', () => {
     });
 
     it('As imagens da área de desenvolvimento estão presentes', () => {
-      cy.get('div#carousel')
+      cy.get('div.carousel')
           .find('img')
             .should('have.length', 7)
     });
@@ -84,27 +83,30 @@ describe('Testes de responsividade e funcionalidade do portifolio', () => {
             .should('exist')
               .and('not.be.empty')
     });
-  });
 
-  context('Testes de responsividade e funcionalidade tablet', () => {
-    beforeEach(() => {
-      cy.visit('./index.html')
-      cy.viewport(sizes[1]);
+    it('O titulo da sessão de tecnolocias é "Tecnologias".', () => {
+      cy.get('#technologies')
+          .find('h1')
+            .should('have.text', 'Tecnologias')
     });
 
-    it('pass', () => {
-      
-    });
-  });
-
-  context('Testes de responsividade e funcionalidade notebook e monitor', () => {
-    beforeEach(() => {
-      cy.visit('./index.html')
-      cy.viewport(sizes[2]);
+    it('O descritivo da sessão não estar vazio', () => {
+      cy.get('#technologies')
+          .find('p.description')
+            .should('not.be.empty')
     });
 
-    it('pass', () => {
-      
+    it('A lista de tecnologias ter ao menos 8 listadas', () => {
+      cy.get('#technologies')
+          .find('p.box')
+            .should('have.length', 8)
+    });
+
+    it('A primeira imagem é correspontende ao primeiro texto', () => {
+      cy.get('.block-caroseul')
+          .find('img.development-image')
+            .should('be.visible')
+              .should('have.attr', 'src', './images/desenvolvimento/figma1.png', 'alt', 'Imagem do figma mostrando a estrutura para celular')
     });
   });
 });
