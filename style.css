@@ -185,6 +185,101 @@ h1 {
 #left-arrow-fullscream, #rigth-arrow-fullscream {
   display: none;
 }
+
+section {
+  padding: 1.5rem 0;
+}
+
+#menu.exist {
+  height: 30vh;
+  overflow-y: auto;
+  visibility: visible;
+}
+
+  .imageContainer {
+    display: flex;
+  }
+
+  #hero-img {
+    max-width: 100%;
+    height: auto;
+    padding-top: 3vh;
+    padding-left: 1vh;
+  }
+
+  #mainHero {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .textContainer {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  
+  .textContainer p {
+    width: 100%;
+    padding-top: 1rem;
+  }
+
+  #hero-title {
+    width: 100%;
+    height: auto;
+    padding-top: 5rem;
+  }
+
+  #hero-describe {
+    padding: 0 1.5rem;
+    text-align: justify;
+  }
+
+  #technologies {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-top: 1rem;
+    width: 100%;
+  }
+
+  #tec-container {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    height: auto;
+    padding: 1rem 0;
+  }
+
+  .box {
+    align-items: center;
+    background-color: var(--main-color);
+    box-shadow: var(--first-dark) 1px 1px 1px;
+    display: flex;
+    height: 25px;
+    justify-content: center;
+    width: 20%;
+  }
+
+
+  .carousel {
+    display: flex;
+    justify-content: start;
+    height: 100%;
+    padding-top: 1rem;
+  }
+
+  #projects {
+    padding-bottom: 1.5rem;
+  }
+  
 @media screen and (max-width: 425px) {
 
 #menu.exist {

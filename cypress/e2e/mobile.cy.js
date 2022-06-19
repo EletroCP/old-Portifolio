@@ -1,6 +1,5 @@
 describe('Testes de responsividade e funcionalidade do portifolio', () => {
-  const sizes = ['samsung-s10', 'ipad-2', 'macbook-13'];
-  
+ 
   context('Testes de responsividade e funcionalidade mobile', () => {
     beforeEach(() => {
       cy.visit('./index.html')
