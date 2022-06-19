@@ -196,7 +196,7 @@ h1 {
     justify-content: center;
     align-items: center;
     background-color: var(--main-color);
-    width: 75px;
+    width: 25%;
     height: 25px;
   }
 
@@ -211,24 +211,17 @@ h1 {
     height: 60px;
     justify-content: space-between;
     align-items: center;
-    bottom: 0;
   }
   
-  .footer-icons {
+  #git {
     width: 100%;
     height: auto;
-  }
-
-  #git {
-    width: 34px;
-    height: 34px;
     filter: invert(100%);
-    padding-right: 10px;
   }
 
   #linkedin {
-    width: 68px;
-    height: 68px;
+    width: 80%;
+    height: auto;
     filter: invert(100%);
   }
 
