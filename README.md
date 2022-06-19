@@ -1,6 +1,8 @@
 # Portifólio
 Meus principais projetos e um pouco sobre mim.
 
+![](gif/short-demonstration.gif)
+
 # Objetivos e metodologia
 O objetivo principal desse projeto é me apresentar como pessoa e programador, ao mesmo tempo que exponho alguns dos meus trabalhos.
 Ele será desenvolvido orientado a testes garantindo boa funcionalidade da página. Contando também com responsividade utilizando moibile first.
