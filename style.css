@@ -25,11 +25,23 @@ body {
 a {
   text-decoration: none;
   color: var(--main-color);
+  align-items: center;
+  display: flex;
+  justify-content: center;
 }
 
 h1 {
   color: var(--second-dark);
 }
+
+h3 {
+  color: var(--second-dark); 
+  text-decoration: underline;
+}
+
+#linkProject {
+  padding: 1rem 0
+};
 
 #header {
   align-items: center;
@@ -182,8 +194,16 @@ h1 {
   padding-right: 5px;
 }
 
-#left-arrow-fullscream, #rigth-arrow-fullscream {
+.left-arrow-fullscream, .rigth-arrow-fullscream {
   display: none;
+}
+
+#container-projects {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
 }
 
 
@@ -250,8 +270,33 @@ h1 {
 
 @media screen and (min-width: 715px){
 
+header {
+    padding: 0;
+    display: flex;
+    width: 100%;
+    height: 60px;
+    justify-content: space-between;
+}
+
 section {
   padding: 1.5rem 0;
+}
+
+#logo {
+  padding-top: 0.3rem;
+}
+
+#header-nav {
+  padding-right: 1rem;
+  padding-top: 1rem;
+}
+
+#menu {
+  top: 67px
+}
+
+#linkProject {
+  padding: 0.3rem;
 }
 
 #menu.exist {
@@ -376,12 +421,14 @@ section {
     align-items: center;
   }
 
-  #left-arrow-fullscream, #rigth-arrow-fullscream {
+  .left-arrow-fullscream, .rigth-arrow-fullscream {
     width: 12vh;
     display: flex;
     padding: 3rem;
   }
-  #left-arrow-fullscream {
+  .left-arrow-fullscream {
     transform: rotate(180deg)
   }
+
+  #project-container {}
 }
