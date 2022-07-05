@@ -1,14 +1,5 @@
-const data = [
-    {
-      link: 'https://eletrocp.github.io/Pixel-Palette/',
-      thumb: './src/images/PixelPalette.png',
-      describe: 'Projeto simples de desenho em pixel art.',
-      name: 'Pixel Palette'
-    },
-  ];
-
 const hamburgetBtn = document.getElementById('hamburger');
-const imagesCarousel = document.querySelectorAll('.development-image');
+// const imagesCarousel = document.querySelectorAll('.development-image');
 const carrousel = document.querySelector('.carousel');
 
 carrousel.addEventListener('wheel', (event) => {
@@ -62,8 +53,8 @@ rigthArrowProject.addEventListener('click', () => {
 })
 
 const project = () => {
-    for (let index = 0; index < data.length; index +=1) {
-        const { link, thumb, describe, name } = data[index];
+    for (let index = 0; index < projectsData.length; index +=1) {
+        const { link, thumb, describe, name } = projectsData[index];
         const div = document.createElement('div');
         const h3 = document.createElement('h3');
         const textContaier = document.createElement('div');
