@@ -74,7 +74,7 @@ const project = () => {
         h3.innerText = name;
         p.innerText = describe;
         a.style.width = '100%';
-        textContaier.classList.add('textContainer');
+        textContaier.classList.add('project-describe-container');
     
         projectContainer.appendChild(div);
         div.appendChild(textContaier);

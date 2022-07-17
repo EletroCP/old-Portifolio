@@ -44,8 +44,10 @@
     <div class="imageContainer" id="hero-text">
       <img src="./images/heroImage.png" alt="Minha foto" id="hero-img">
     </div>
-    <div class="textContainer">
-      <h1 id="hero-title">É um prazer te conhecer!</h1>
+    <div class="hero-text-container">
+      <div>
+        <h1 id="hero-title">É um prazer te conhecer!</h1>
+      </div>
       <p id="hero-describe">Meu nome é Breno Laskavski Lopes, moro em Guaratuba - PR, sou estudante de desenvolvimento
         web full stack pela Trybe.
         <br> Aqui você pode descobrir um pouco sobre meu processo de desenvolvimento enquanto dev e ver alguns dos meus
@@ -54,7 +56,7 @@
     </div>
   </section>
   <section id="technologies">
-    <div class="textContainer">
+    <div class="text-technologies-container">
       <h1>Tecnologias</h1>
       <p class="description">Essas são algumas das ferramentas e tecnologias que utilizo durante a produção.</p>
     </div>
@@ -70,7 +72,7 @@
       </div>
   </section>
   <section id="development">
-    <div class="textContainer">
+    <div class="text-technologies-container">
       <h1 id="development-title">Desenvolvimento</h1>
       <p>Meu método de desenvolvimento é dividido em 4 etapas a de estruturação, testes, implementação e refatoração.
       </p>
@@ -80,19 +82,19 @@
       <div class="block-caroseul">
         <img src="./images/desenvolvimento/figma1.png" alt="Imagem do figma mostrando a estrutura para celular"
           class="development-image">
-          <div class="textContainer">
-            <p>Primeiro, construo a estrutura base do projeto para ajudar o na etapa de testes e implementação.</p>
+          <div class="caroseul-description">
+            <p>Primeiro vou contruir a estrutura base do projeto para ajudar na etapa de testes e implementação.</p>
           </div>
       </div>
       <div class="block-caroseul">
         <img src="./images/desenvolvimento/figma2.png" alt="Imagem do figma mostrando a estrutura para tablet" class="development-image">
-        <div class="textContainer">
-          <p>para isso uso ferramentos como o Figma que posibilitam uma prévia do modelo do site.</p>
+        <div class="caroseul-description">
+          <p>Para isso uso ferramentas como o Figma, que posibilitam uma prévia do modelo do site.</p>
         </div>
       </div>
       <div class="block-caroseul">
         <img src="./images/desenvolvimento/figma3.png" alt="Imagem do figma mostrando a estrutura para desktop" class="development-image">
-        <div class="textContainer">
+        <div class="caroseul-description">
           <p>
             Esse é o exemplo do figma para desktop.
           </p>
@@ -100,35 +102,35 @@
       </div>
       <div class="block-caroseul">
         <img src="./images/desenvolvimento/cypress1.png" alt="Imagem dos testes da pagina" class="development-image">
-        <div class="textContainer">
+        <div class="caroseul-description">
           <p>
-            Em seguida passo para os testes, eles servem para verificar se os elementos estão todos funcionando.
+            Em seguida os testes, eles servem para verificar se os elementos estão todos funcionando.
           </p>
         </div>
       </div>
       <div class="block-caroseul">
         <img src="./images/desenvolvimento/html1.png" alt="Imagem do HTML dessa pagina" class="development-image">
-        <div class="textContainer">
-          <p>Hora de por a mão na massa</p>
+        <div class="caroseul-description">
+          <p>Hora de por a mão na massa.</p>
         </div>
       </div>
       <div class="block-caroseul">
         <img src="./images/desenvolvimento/css1.png" alt="Imagem do CSS dessa pagina" class="development-image">
-        <div class="textContainer">
-          <p>começo implementando o HTML, CSS e Javascript.</p>
+        <div class="caroseul-description">
+          <p>Primeiro vem o HTML depois o JavaScript e por ultimo o CSS.</p>
         </div>
       </div>
       <div class="block-caroseul">
         <img src="./images/desenvolvimento/js1.png" alt="Imagem do JS dessa pagina" class="development-image">
-        <div class="textContainer">
-          <p>considerados esqueleto, corpo e cérebro do site.</p>
+        <div class="caroseul-description">
+          <p>Considerados esqueleto, cérebro, e corpo do site.</p>
         </div>
       </div>
       <div class="block-caroseul">
-        <div class="textContainer">
+        <div class="caroseul-description">
+          <img src="./images/desenvolvimento/refatoramento.png" alt="Site antes e depois" class="development-image">
           <p>
-            E por ultimo e provavelmente mais importante a refatoração. É o momento de rodar os testes novamente para
-            certificar o funcionamento, verificar se não há nada fora do lugar para então finalizar mais um tabalho.
+            Então refatorar, rodar os testes de novo para certificar o funcionamento, verificar se não há nada fora do lugar e finalizar mais um tabalho.
           </p>
         </div>
       </div>
@@ -136,11 +138,15 @@
     <img src="./images/arrow-icon.png" alt="Seta para direita" class="arrow rigth-arrow-fullscream">
   </section>
   <div id="arrow-case">
-    <img src="./images/arrow-icon.png" alt="Seta para esquerda" id="left-arrow" class="arrow">
-    <img src="./images/arrow-icon.png" alt="Seta para direita" id="rigth-arrow" class="arrow">
+    <div class="arrow-container">
+      <img src="./images/arrow-icon.png" alt="Seta para esquerda" id="left-arrow" class="arrow">
+    </div>
+    <div class="arrow-container">
+      <img src="./images/arrow-icon.png" alt="Seta para direita" id="rigth-arrow" class="arrow">
+    </div>
   </div>
   <section id="projects">
-    <div class="textContainer">
+    <div id="text-projects-container">
       <h1 id="project-title">Projetos</h1>
       <p id="describe-project">
         E aqui eu vou apresentar alguns outros trabalhos meus.
@@ -162,6 +168,14 @@
       <img src="./images/icons/gitIco.png" alt="Icon GitHub" id="git" class="footer-icons">
     </a>
   </footer>
+  <div id="arrow-case-projects">
+    <div class="arrow-container">
+      <img src="./images/arrow-icon.png" alt="Seta para esquerda" id="left-arrow" class="arrow">
+    </div>
+    <div class="arrow-container">
+      <img src="./images/arrow-icon.png" alt="Seta para direita" id="rigth-arrow" class="arrow">
+    </div>
+  </div>
 </body>
 <script src="./src/projects.js"></script>
 <script src="./script.js"></script>
