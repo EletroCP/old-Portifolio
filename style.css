@@ -220,8 +220,8 @@ h3 {
     position: absolute;
     display: flex;
     margin: .3rem .7rem;
-    gap: 82%;
-    width: 100%;
+    justify-content: space-between;
+    width: 90%;
   }
 
   .arrow-container {
@@ -265,8 +265,8 @@ h3 {
     position: absolute;
     display: flex;
     margin: .3rem .7rem;
-    gap: 82%;
-    width: 100%;
+    justify-content: space-between;
+    width: 90%;
   }
 
   #footer {
