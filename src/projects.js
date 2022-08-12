@@ -16,5 +16,11 @@ const projectsData = [
     thumb: './src/images/project-mistery-letter.png',
     describe: 'Gerador de "Mensagem misteriosa"',
     name: 'Mistery Letter'
+  },
+  {
+    link: 'https://eletrocp.github.io/Meme-Generator/',
+    thumb: './src/images/meme-generator.png',
+    describe: 'Simples criador/editor de memes.',
+    name: 'Meme Generator'
   }
 ];
