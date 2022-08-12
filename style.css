@@ -218,7 +218,7 @@ h3 {
     filter: opacity(50%);
     top: 131%;
     position: absolute;
-    display: flex;
+    display: none;
     margin: .3rem .7rem;
     justify-content: space-between;
     width: 90%;
@@ -263,7 +263,7 @@ h3 {
     filter: opacity(50%);
     top: 186%;
     position: absolute;
-    display: flex;
+    display: none;
     margin: .3rem .7rem;
     justify-content: space-between;
     width: 90%;
