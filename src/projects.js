@@ -10,5 +10,11 @@ const projectsData = [
     thumb: './src/images/TodoList.png',
     describe: 'Lista de tarefas para seu dia a dia. *Work In Progress',
     name: 'To do List'
+  },
+  {
+    link: 'https://eletrocp.github.io/Mistery-Letter/',
+    thumb: './src/images/project-mistery-letter.png',
+    describe: 'Gerador de "Mensagem misteriosa"',
+    name: 'Mistery Letter'
   }
 ];

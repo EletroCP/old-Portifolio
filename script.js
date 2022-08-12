@@ -22,8 +22,8 @@ const leftArrow2 = document.querySelector('.left-arrow-fullscream');
 const rigthArrow2 = document.querySelector('.rigth-arrow-fullscream');
 const projectContainer = document.getElementById('project-container');
 const containerProject = document.getElementById('container-projects');
-const leftArrowProject = document.getElementById('arrowProjectLeft');
-const rigthArrowProject = document.getElementById('arrowProjectRigth');
+const leftArrowProject = document.querySelector('.leftProjectArrow');
+const rigthArrowProject = document.querySelector('.rigthProjectArrow');
 
 leftArrow.addEventListener('click', () => {
     carrousel.scrollBy(-300, 0)
@@ -42,13 +42,10 @@ rigthArrow2.addEventListener('click', () => {
 })
 
 leftArrowProject.addEventListener('click', () => {
-    console.log('oi')
     projectContainer.scrollBy(-300, 0)
 })
 
 rigthArrowProject.addEventListener('click', () => {
-    console.log('oi')
-
     projectContainer.scrollBy(300, 0)
 })
 
