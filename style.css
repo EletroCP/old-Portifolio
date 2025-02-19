@@ -124,7 +124,7 @@ h3 {
 
 
   #menu.exist {
-    height: 17rem;
+    height: 10rem;
     overflow-y: auto;
     visibility: visible;
   }
@@ -219,7 +219,7 @@ h3 {
     top: 131%;
     position: absolute;
     display: none;
-    margin: .3rem .7rem;
+    padding-left: .3rem .7rem;
     justify-content: space-between;
     width: 90%;
   }
@@ -264,7 +264,7 @@ h3 {
     top: 186%;
     position: absolute;
     display: none;
-    margin: .3rem .7rem;
+    padding-left: .3rem .7rem;
     justify-content: space-between;
     width: 90%;
   }
@@ -374,7 +374,7 @@ h3 {
 
 
   #menu.exist {
-    height: 17rem;
+    height: 10rem;
     overflow-y: auto;
     visibility: visible;
   }
@@ -479,7 +479,7 @@ h3 {
     display: flex;
     filter: opacity(50%);
     gap: 84%;
-    margin: .3rem .7rem;
+    padding-left: .3rem .7rem;
     position: absolute;
     top: 53rem;
     width: 100%;
@@ -524,7 +524,7 @@ h3 {
     display: flex;
     filter: opacity(50%);
     gap: 84%;
-    margin: .3rem .7rem;
+    padding-left: .3rem .7rem;
     position: absolute;
     top: 87rem;
     width: 100%;
@@ -635,7 +635,7 @@ h3 {
 
 
   #menu.exist {
-    height: 17rem;
+    height: 16.9rem;
     overflow-y: auto;
     visibility: visible;
   }
@@ -738,7 +738,7 @@ h3 {
   #arrow-case {
     display: flex;
     filter: opacity(70%);
-    margin-left: 1%;
+    padding-left: .3rem .7rem;
     gap: 92%;
     position: absolute;
     top: 63rem;
@@ -783,7 +783,7 @@ h3 {
   #arrow-case-projects {
     display: flex;
     filter: opacity(50%);
-    margin-left: 1%;
+    padding-left: .3rem .7rem;
     gap: 92%;
     position: absolute;
     top: 125rem;
